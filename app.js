@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutBtn = document.getElementById('checkout-btn');
     const addCartBtns = document.querySelectorAll('.btn-add-cart');
 
-    // Store WhatsApp Number (Example)
-    const STORE_WHATSAPP = '5541999999999'; // Replace with real number
+    // Store WhatsApp Number
+    const STORE_WHATSAPP = '552491764153'; // Updated with provided number
 
     function updateCartUI() {
         cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
