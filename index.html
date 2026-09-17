@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segredos de Vênus | Boutique Erótica</title>
+    <meta name="description" content="Intimidade. Desejo. Descoberta. Segredos que só Vênus revela.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="media_1789648267908.png">
+    
+    <!-- Open Graph / Compartilhamento -->
+    <meta property="og:title" content="Segredos de Vênus | Boutique Erótica">
+    <meta property="og:description" content="Intimidade. Desejo. Descoberta. Catálogo completo com envio discreto.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ygors/segredos-de-venus/main/test_image_1789653840072.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="age-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="modal-title">Aviso de Conteúdo +18</h2>
+            <p class="modal-text">Este site contém produtos destinados a maiores de 18 anos. Você confirma que tem 18 anos ou mais?</p>
+            <div class="modal-buttons">
+                <button id="btn-yes" class="btn btn-primary">Sim, tenho +18 anos</button>
+                <button id="btn-no" class="btn btn-outline">Não, sou menor</button>
+            </div>
+            <p id="age-error" class="error-msg hidden" style="color:red; margin-top:1rem;">Acesso restrito para menores de 18 anos.</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="content-blurred">
+        
+        <header class="header">
+            <div class="header-container">
+                <div class="menu-icon">
+                    <i class="ph ph-list"></i>
+                </div>
+                <div class="logo">
+                    <img src="media_1789648267908.png" alt="Segredos de Vênus Logo">
+                </div>
+                <div class="cart-icon" id="cart-toggle">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-rating">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    <span>5,0 (24 Avaliações)</span>
+                </div>
+                <h1>Intimidade. Desejo. Descoberta.</h1>
+                <p>✨ Segredos que só Vênus revela.<br>📦 Envio discreto em Curitiba e região.</p>
+                <a href="#produtos" class="btn btn-primary">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <section class="category-circles">
+            <h2>Navegue por Categorias</h2>
+            <div class="circles-container">
+                <a href="#cat-bem-estar" class="circle-item">
+                    <div class="circle-img"><img src="cat_oleo_corporal_1789652631470.jpg" alt="Bem-Estar"></div>
+                    <span>Bem-Estar</span>
+                </a>
+                <a href="#cat-geis" class="circle-item">
+                    <div class="circle-img"><img src="cat_gel_yummy_morango_1789652651870.jpg" alt="Géis Yummy"></div>
+                    <span>Géis Yummy</span>
+                </a>
+                <a href="#cat-lubrificantes" class="circle-item">
+                    <div class="circle-img"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Lubrificantes"></div>
+                    <span>Géis Íntimos</span>
+                </a>
+                <a href="#cat-plugs" class="circle-item">
+                    <div class="circle-img"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Vibradores"></div>
+                    <span>Vibradores e Plugs</span>
+                </a>
+                <a href="#cat-acessorios" class="circle-item">
+                    <div class="circle-img"><i class="ph ph-cards" style="font-size:3rem; color:var(--primary-color)"></i></div>
+                    <span>Acessórios</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="produtos" class="products section-padding">
+            <div class="container">
+                <h2 class="section-title">Catálogo Completo</h2>
+
+                <!-- Categoria 1 -->
+                <div id="cat-bem-estar" class="category-section">
+                    <h3>Bem-Estar & Sensorial</h3>
+                    <div class="products-carousel">
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_banho_ervas_1789652531385.jpg" alt="Banho de Ervas"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Banho de Ervas Segredos de Vênus (20g)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="1" data-name="Banho de Ervas (20g)" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_velas_1789652620248.jpg" alt="Velas Aromáticas"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Velas Aromáticas Artesanais</h3>
+                                <p class="product-price">R$ 30,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="2" data-name="Vela Aromática" data-price="30.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_oleo_corporal_1789652631470.jpg" alt="Óleo Corporal"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Óleo Corporal Energizado Rachel Mayer (50ml)</h3>
+                                <p class="product-price">R$ 60,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="3" data-name="Óleo Corporal" data-price="60.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_spray_ambiente_1789652641730.jpg" alt="Spray Ambiente"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Spray de Ambiente Energizado (100ml)</h3>
+                                <p class="product-price">R$ 70,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="4" data-name="Spray Ambiente" data-price="70.00">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 2 -->
+                <div id="cat-geis" class="category-section">
+                    <h3>Géis Beijáveis Yummy</h3>
+                    <div class="products-carousel">
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_gel_yummy_morango_1789652651870.jpg" alt="Yummy Morango"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Térmico Beijável Morango (15ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="5" data-name="Yummy Morango" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_gel_yummy_menta_1789652755968.jpg" alt="Yummy Menta"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Térmico Beijável Menta (15ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="6" data-name="Yummy Menta" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_gel_yummy_chocolate_1789652746124.jpg" alt="Yummy Chocolate"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Térmico Beijável Chocolate (15ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="7" data-name="Yummy Chocolate" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_gel_yummy_menta_1789652755968.jpg" alt="Yummy Ice Menta" style="filter: hue-rotate(120deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Térmico Beijável Ice Menta (15ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="8" data-name="Yummy Ice Menta" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_gel_yummy_morango_1789652651870.jpg" alt="Yummy Chiclete" style="filter: hue-rotate(290deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Térmico Beijável Chiclete (15ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="9" data-name="Yummy Chiclete" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 3 -->
+                <div id="cat-lubrificantes" class="category-section">
+                    <h3>Géis Funcionais & Lubrificantes</h3>
+                    <div class="products-carousel">
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Kgel"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Lubrificante Íntimo à Base D'Água Kgel (50g)</h3>
+                                <p class="product-price">R$ 20,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="10" data-name="Lubrificante Kgel" data-price="20.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Gel Secret Love" style="filter: hue-rotate(300deg) brightness(0.8);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Excitante Térmico Secret Love (15ml)</h3>
+                                <p class="product-price">R$ 25,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="11" data-name="Secret Love Térmico" data-price="25.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Gel Secret Love 2" style="filter: hue-rotate(180deg) brightness(0.9);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Vasodilatador Retardante Secret Love (15ml)</h3>
+                                <p class="product-price">R$ 25,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="12" data-name="Secret Love Vasodilatador" data-price="25.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Hot Flowers" style="filter: sepia(1) hue-rotate(320deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Estimulante Retardante Hot Flowers (15ml)</h3>
+                                <p class="product-price">R$ 25,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="13" data-name="Hot Flowers Retardante" data-price="25.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Hot Flowers 2" style="filter: saturate(2) hue-rotate(280deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Excitante Feminino Hot Flowers (18ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="14" data-name="Hot Flowers Feminino" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_lubrificante_kgel_1789652766628.jpg" alt="Siri Ryka" style="filter: saturate(3) hue-rotate(340deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Gel Excitante Térmico Siri Ryka (15ml)</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="16" data-name="Siri Ryka" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 4 -->
+                <div id="cat-plugs" class="category-section">
+                    <h3>Vibradores & Plugs</h3>
+                    <div class="products-carousel">
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Vibrador Personal"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vibrador Personal Multivelocidade</h3>
+                                <p class="product-price">R$ 70,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="36" data-name="Vibrador Personal" data-price="70.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Vibrador Rabbit" style="filter: hue-rotate(280deg) saturate(1.5);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vibrador Rabbit Ponto G Prudence</h3>
+                                <p class="product-price">R$ 120,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="39" data-name="Vibrador Rabbit" data-price="120.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Massageador" style="filter: hue-rotate(320deg) brightness(0.9);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Massageador Varinha Mágica (20 Vibrações)</h3>
+                                <p class="product-price">R$ 180,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="34" data-name="Varinha Mágica" data-price="180.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Vibrador Ponto G" style="filter: hue-rotate(40deg) saturate(0.8);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Vibrador Ponto G com Capa Texturizada</h3>
+                                <p class="product-price">R$ 50,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="31" data-name="Vibrador Ponto G Capa Texturizada" data-price="50.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Plug Anal" style="filter: contrast(1.2) grayscale(0.8);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Plug Anal de Silicone Escalonado</h3>
+                                <p class="product-price">R$ 40,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="19" data-name="Plug Silicone Escalonado" data-price="40.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Plug Inox" style="filter: sepia(0.5) hue-rotate(180deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Plug Aço Inoxidável (P, M, G)</h3>
+                                <p class="product-price">R$ 50,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="17" data-name="Plug Aço Inox" data-price="50.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><img src="cat_vibrador_generico_1789653951938.jpg" alt="Prótese" style="filter: sepia(0.8) hue-rotate(340deg);"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Prótese Realista c/ Ventosa 21,8cm</h3>
+                                <p class="product-price">R$ 250,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="23" data-name="Prótese c/ Ventosa 21.8cm" data-price="250.00">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 5 -->
+                <div id="cat-acessorios" class="category-section">
+                    <h3>Acessórios, Jogos e Diversão</h3>
+                    <div class="products-carousel">
+                        <div class="product-card">
+                            <div class="product-image"><i class="ph ph-dice-five" style="font-size:4rem; color:var(--primary-color)"></i></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Dados Eróticos Jogo do Prazer</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="40" data-name="Dados Eróticos" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><i class="ph ph-cards" style="font-size:4rem; color:var(--primary-color)"></i></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Jogo do Prazer Mulher x Mulher</h3>
+                                <p class="product-price">R$ 15,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="41" data-name="Jogo Mulher x Mulher" data-price="15.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><i class="ph ph-cards" style="font-size:4rem; color:var(--primary-color)"></i></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Baralho Super Erótico Soft Love</h3>
+                                <p class="product-price">R$ 25,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="42" data-name="Baralho Soft Love" data-price="25.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><i class="ph ph-spinner" style="font-size:4rem; color:var(--primary-color)"></i></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Roleta Sexy Spinner</h3>
+                                <p class="product-price">R$ 20,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="43" data-name="Roleta Sexy Spinner" data-price="20.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><i class="ph ph-lock-key" style="font-size:4rem; color:var(--primary-color)"></i></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Algema de Metal com Pelúcia Prudence</h3>
+                                <p class="product-price">R$ 35,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="46" data-name="Algema Pelúcia" data-price="35.00">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image"><i class="ph ph-eye-slash" style="font-size:4rem; color:var(--primary-color)"></i></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Kit Algema e Venda de Couro Sintético</h3>
+                                <p class="product-price">R$ 50,00</p>
+                                <button class="btn btn-outline btn-add-cart btn-block" data-id="47" data-name="Kit Algema e Venda" data-price="50.00">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="reviews section-padding">
+            <div class="container">
+                <h2 class="section-title">O que dizem nossas clientes</h2>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p class="review-text">"Preço justo e muito capricho no envio dos pedidos."</p>
+                        <p class="review-author">- Cliente Satisfeita</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Ótimos produtos, atendimento excelente, muito obrigada."</p>
+                        <p class="review-author">- PauLo Lucena</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Excelente atendimento, ambiente discreto e muito acolhedor!"</p>
+                        <p class="review-author">- Neuza Peres</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">"Atendimento rápido, a dona uma querida, muito prestativa, ainda mandou um brindezinho. A caixa vem bem discretinha e quando abre ela é bem cheirosa! Recomendo demais"</p>
+                        <p class="review-author">- Carolina Cebrian</p>
+                    </div>
+                </div>
+
+                <div class="feedback-images-container">
+                    <div class="feedback-images">
+                        <img src="media_1789648356742.png" alt="Feedback WhatsApp 1">
+                        <img src="media_1789648392650.png" alt="Feedback WhatsApp 2">
+                        <img src="media_1789648425352.png" alt="Feedback WhatsApp 3">
+                        <img src="media_1789648455635.png" alt="Feedback WhatsApp 4">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <h3>Segredos de Vênus</h3>
+                    <p>Autocuidado, intimidade e descoberta.</p>
+                    <p>Empresa que acolhe a comunidade LGBTQ+ e se orgulha de ser gerida por empreendedoras.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Catálogo</h4>
+                    <ul>
+                        <li><a href="#">Óleos Sensuais</a></li>
+                        <li><a href="#">Géis e Lubrificantes</a></li>
+                        <li><a href="#">Lingerie</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>R. Santa Zita, 105 - Guaíra</p>
+                    <p>Curitiba - PR, 80630-260</p>
+                    <p>Aberto 24 horas</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/segredosdvenus/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-whatsapp-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Segredos de Vênus. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <button id="close-cart" class="btn-close"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart-msg">Seu carrinho está vazio.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">R$ 0,00</span>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary btn-block">Finalizar pelo WhatsApp <i class="ph ph-whatsapp-logo"></i></button>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
